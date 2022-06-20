@@ -12,7 +12,7 @@ python3 -m venv env_name
 2. install dependencies with pip
 ```
 source env_name/bin/activate
-pip install fpdf
+pip install fpdf filestack-python
 ```
 3. run brewlog.py (you may need sudo privileges to create a PDF in your project folder)
 ```
