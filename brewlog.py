@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from datetime import time
 from fpdf import FPDF
-import qrcode
+#import qrcode
 
 from datetime import date, datetime, timedelta
 
@@ -75,10 +75,10 @@ class Content:
                     messagebox.showinfo("Atention!", "Start the timer before adding a comment")
             log_text['state']='disabled'
 
-        def qr_code():
-            data = 'www.somelink.com'
-            image_qr = qrcode.make(data)
-            image_qr.save('report1qrcode.png')
+        #def qr_code():
+            #data = 'www.somelink.com'
+            #image_qr = qrcode.make(data)
+            #image_qr.save('report1qrcode.png')
             #return image_qr
 
         def print_report():
@@ -89,7 +89,7 @@ class Content:
             else:
                 global image_qr
                 #doc = FPDF()
-                qr_code()
+                #qr_code()
                 doc=FPDF(orientation="P", unit='pt', format='A4')
                 doc.add_page()
                 doc.set_font("Arial", size=15)
