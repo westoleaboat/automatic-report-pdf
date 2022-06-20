@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from datetime import time
 from fpdf import FPDF
+from filestack import Client
 #import qrcode
 
 from datetime import date, datetime, timedelta
@@ -100,6 +101,11 @@ class Content:
                 doc.output("pdf_file_sample.pdf")
                 #print('Your PDF has been created as "pdf_file_sample.pdf" ')
                 messagebox.showinfo("PDF", "your PDF has been created as \"pdf_file_sample.pdf\" ")
+                
+                #Filestack share file online
+                client=Client('AM9fqJoiDQ5Cf5ktFB4e9z')
+                new_filelink=client.upload(filepath='pdf_file_sample.pdf')
+                print('Visit the following URL to acces your report from anywhere:\n{}'.format(new_filelink.url))
 
         # create PDF button
         print_btn = Button(text='print report', command=print_report)
