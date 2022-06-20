@@ -18,4 +18,4 @@ pip install fpdf
 ```
 sudo python3 brewlog.py
 ```
-4. start the timer before loggin your data. Click on 'Print report' to generate the PDf, a messagebox will indicate that the process was succesful.
+4. start the timer before loggin your data. Click on 'Print report' to generate the PDF, a messagebox will indicate that the process was succesful.
