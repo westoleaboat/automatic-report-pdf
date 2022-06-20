@@ -100,11 +100,12 @@ class Content:
                 doc.multi_cell(350, 20, txt=text_to_print, align="L") # ln=1,
                 doc.output("pdf_file_sample.pdf")
                 #print('Your PDF has been created as "pdf_file_sample.pdf" ')
-                messagebox.showinfo("PDF", "your PDF has been created as \"pdf_file_sample.pdf\" ")
+                
                 
                 #Filestack share file online
                 client=Client('AM9fqJoiDQ5Cf5ktFB4e9z')
                 new_filelink=client.upload(filepath='pdf_file_sample.pdf')
+                messagebox.showinfo("PDF", f"your PDF has been created as \"pdf_file_sample.pdf\"\nShare it with {new_filelink.url} ")
                 print('Visit the following URL to acces your report from anywhere:\n{}'.format(new_filelink.url))
 
         # create PDF button
