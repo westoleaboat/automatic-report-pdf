@@ -12,9 +12,12 @@ Requirements
 
 Functional Requirements:
 
+  * Provide a timer with Start, Stop, and Reset Buttons; 
+    display of timer update when running.
   * Allow all relevant, valid data to be entered,
     as per the data dictionary.
-  * Timestamp an input and log it onto screen to follow production.
+  * automatically timestamp an input and log it onto screen 
+    to follow production.
   * Append entered data to a PDF file:
     - The PDF file must have a filename of
     production_CURRENTDATE.pdf, where CURRENTDATE is the date
